@@ -8,7 +8,7 @@ export default function Footer() {
       
       <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-3">
         
-        {/* Brand Section */}
+       
         <div>
           <h2 className="text-2xl font-bold mb-4 text-gray-800">
             DOSO <span className="text-orange-600">Restaurant</span>
@@ -19,7 +19,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Contact Info */}
+        
         <div>
           <h3 className="text-xl font-semibold mb-4 text-gray-800">
             Contact Info
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Quick Links */}
+       
         <div>
           <h3 className="text-xl font-semibold mb-4 text-gray-800">
             Quick Links

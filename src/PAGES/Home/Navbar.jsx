@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X, Pizza } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,12 +16,12 @@ function Navbar() {
         </div>
 
        
-        <div className="hidden md:flex gap-8 text-white font-medium">
-          <a href="/" className="hover:text-black transition">Home</a>
-          <a href="/about" className="hover:text-black transition">About</a>
-          <a href="/menu" className="hover:text-black transition">Menu</a>
-          <a href="/contact" className="hover:text-black transition">Contact</a>
-        </div>
+       <div className="hidden md:flex gap-8 text-white font-medium">
+  <Link to="/" className="hover:text-black transition">Home</Link>
+  <Link to="/about" className="hover:text-black transition">About</Link>
+  <Link to="/menu" className="hover:text-black transition">Menu</Link>
+  <Link to="/contact" className="hover:text-black transition">Contact</Link>
+</div>
 
         
         <div className="md:hidden text-white">
