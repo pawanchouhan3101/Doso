@@ -33,12 +33,43 @@ function Navbar() {
 
      
       {isOpen && (
-        <div className="md:hidden bg-orange-400 px-6 py-4 flex flex-col gap-4 text-white font-medium">
-          <a href="#" onClick={() => setIsOpen(false)}>Home</a>
-          <a href="#" onClick={() => setIsOpen(false)}>About</a>
-          <a href="#" onClick={() => setIsOpen(false)}>Menu</a>
-          <a href="#" onClick={() => setIsOpen(false)}>Contact</a>
-        </div>
+      
+
+<div className="md:hidden bg-orange-400 px-6 py-4 flex flex-col gap-4 text-white font-medium">
+  
+  <Link 
+    to="/" 
+    onClick={() => setIsOpen(false)} 
+    className="hover:text-black transition"
+  >
+    Home
+  </Link>
+
+  <Link 
+    to="/about" 
+    onClick={() => setIsOpen(false)} 
+    className="hover:text-black transition"
+  >
+    About
+  </Link>
+
+  <Link 
+    to="/menu" 
+    onClick={() => setIsOpen(false)} 
+    className="hover:text-black transition"
+  >
+    Menu
+  </Link>
+
+  <Link 
+    to="/contact" 
+    onClick={() => setIsOpen(false)} 
+    className="hover:text-black transition"
+  >
+    Contact
+  </Link>
+
+</div>
       )}
     </nav>
   );

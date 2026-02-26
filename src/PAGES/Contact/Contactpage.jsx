@@ -1,5 +1,6 @@
 import { PhoneCall, Mail, MapPin } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Contactpage() {
   return (
@@ -84,13 +85,18 @@ export default function Contactpage() {
               className="w-full p-4 rounded-xl bg-white/80 border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:outline-none transition duration-300 shadow-sm"
             ></textarea>
 
-            <button
+<Link to="/">
+ <button
               type="submit"
               className="w-full py-4 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-orange-500 to-orange-600 shadow-lg hover:shadow-orange-400/50 hover:scale-105 transition duration-300"
             >
               Send Message 
             </button>
 
+
+
+</Link>
+           
           </form>
         </div>
 
